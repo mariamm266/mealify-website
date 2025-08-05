@@ -1,0 +1,53 @@
+ /* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 390px) {
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) { 
+   .contact-btn{
+    width: 15%;
+}
+.home-main .row{
+    flex-direction: row;
+}
+.btn1-home{
+    padding: 0.5rem 1.5rem;
+}
+.btns{
+    flex-direction: row;
+    align-items: center;
+}
+.nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 6%;
+  width: 0;
+  height: 2px;
+  background-color: var(--mainColor);
+  transition: width 0.4s ease;
+}
+.nav-item .nav-link:hover::after {
+  width: 90%;
+}
+.navbar-nav .nav-item .active::after{
+    content: "";
+    position: absolute;
+   width: 90%;
+   height: 2px;
+   background-color: var(--mainColor);
+   left: 6%;
+   top: 90%;
+}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) { 
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
